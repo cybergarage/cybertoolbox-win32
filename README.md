@@ -4,8 +4,6 @@ CyberToolbox for WIN32 is a VRML2.0/97 authoring tool. VRML is the most standard
 
 ![ctb_win32](doc/img/ctb_win32.png)
 
-# Features
-
 ## SceneGraph Editor
 
 The CyberToolbox has a visual scene graph editor. The window shows a current scenegraph and behavior diagrams, you can add new scenegraph from VRML files into a current world, save the current world into a VRML file, add new nodes, edit the node infomation, start and stop the simulation, create new behavior diagrams.
@@ -73,8 +71,7 @@ clockMin angle = (-6 * csMinute) - (csSecond / 10)
 clockSec angle = (-6 * csSecond)
 ```
 
-
-# Resources
+## Resources
 
 - [CyberToolbox User's Guide Release 2.1 \(Japanese\)](doc/ctbwin32usersguide210j.pdf)
 
