@@ -1,0 +1,1497 @@
+#VRML V2.0 utf8
+Viewpoint {
+	fieldOfView 0.785398
+	jump TRUE
+	position 0 0 5.00796
+	orientation 0 0 1 0
+	description ""
+}
+NavigationInfo {
+	visibilityLimit 0
+	headlight TRUE
+	speed 1
+}
+DEF saikoro Transform {
+	translation 0 0 0
+	rotation 1 0 0 1.57
+	scale 1 1 1
+	scaleOrientation 0 0 1 0
+	center 0 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice1.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						-1 1 1,
+						1 1 1,
+						1 1 -1,
+						-1 1 -1,
+						-1 -1 1,
+						1 -1 1,
+						1 -1 -1,
+						-1 -1 -1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						0 1,
+						1 1,
+						1 0,
+						0 0
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice6.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						-1 -1 -1,
+						1 -1 -1,
+						1 -1 1,
+						-1 -1 1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						0 0,
+						1 0,
+						1 1,
+						0 1
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice3.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						-1 1 1,
+						-1 -1 1,
+						1 -1 1,
+						1 1 1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						0 1,
+						0 0,
+						1 0,
+						1 1
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice5.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						1 1 1,
+						1 -1 1,
+						1 -1 -1,
+						1 1 -1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						1 1,
+						0 1,
+						0 0,
+						1 0
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice4.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						1 1 -1,
+						1 -1 -1,
+						-1 -1 -1,
+						-1 1 -1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						1 1,
+						1 0,
+						0 0,
+						0 1
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					repeatS TRUE
+					repeatT TRUE
+					url [
+						"dice2.gif"
+					]
+				}
+			}
+			geometry IndexedFaceSet {
+				ccw TRUE
+				colorPerVertex FALSE
+				normalPerVertex TRUE
+				convex TRUE
+				creaseAngle 0
+				solid TRUE
+				coord Coordinate {
+					point [
+						-1 1 -1,
+						-1 -1 -1,
+						-1 -1 1,
+						-1 1 1
+					]
+				}
+				texCoord TextureCoordinate {
+					point [
+						1 0,
+						0 0,
+						0 1,
+						1 1
+					]
+				}
+				coordIndex [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		}
+		DEF WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE TouchSensor {
+			enabled TRUE
+		}
+	]
+}
+Background {
+	skyColor [
+		0 0 0
+	]
+}
+DEF WORLD_ROOT_NODE Group {
+	children [
+		DEF WORLD_GLOBAL_DATA_ROOT_NODE Group {
+			children [
+				DEF WORLD_GLOBALDATA_rotateDirection Anchor {
+					description "0,1,0,3.14"
+				}
+				DEF WORLD_GLOBALDATA_rotateSpeed Anchor {
+					description "0"
+				}
+				DEF WORLD_GLOBALDATA_direction Anchor {
+					description "1,0,0,1.57"
+				}
+				DEF WORLD_GLOBALDATA_result Anchor {
+					description "0,1,0,3.14:0,0,1,0:0,1,0,1.57:0,1,0,3.14:0,1,0,-1.57:1,0,0,1.57:0,0,1,-1.57"
+				}
+			]
+		}
+		DEF WORLD_EVENT_ROOT_NODE Group {
+			children [
+				DEF WORLD_EVENT_SYSTEM_Start_NONE_THIS TimeSensor {
+					cycleInterval 0.1
+					enabled TRUE
+					loop TRUE
+					startTime 0
+					stopTime -1
+				}
+				DEF WORLD_EVENT_SYSTEM_Frame_NONE_THIS TimeSensor {
+					cycleInterval 0.1
+					enabled TRUE
+					loop TRUE
+					startTime 0
+					stopTime -1
+				}
+				DEF WORLD_EVENT_USER_Pickup_saikoro_TouchSensor Group {
+				}
+			]
+		}
+		DEF WORLD_DIAGRAM_ROOT_NODE Group {
+			children [
+				DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize Transform {
+					translation 142 66 0
+					rotation 0 0 1 0
+					scale 457 390 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE0 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_direction
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,0,1,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 352
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,0,1,-1.57"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,1,0,-1.57"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1,0,0,1.57"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,1,0,1.57"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE7 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 352
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,1,0,3.14"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE8 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE9 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 352
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "6"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE10 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE11 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE12 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE13 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 352
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "3"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE14 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE15 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 288
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE16 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 448
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE17 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 288
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE18 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 448
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_result
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE19 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Rotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0,0,1,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE20 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 344
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_rotateSpeed
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE21 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE22 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscJavaConsole.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "JavaConsole"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 256
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 336
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation Transform {
+					translation 90 51 0
+					rotation 0 0 1 0
+					scale 560 288 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE0 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemFrame.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "FRAME"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString frame
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringGetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "GetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_SOURCE_NODE USE WORLD_GLOBALDATA_direction
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetRotation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetRotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 384
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE saikoro
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"BooleanEqual.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString inValue1
+							eventIn SFString inValue2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Boolean"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Equal"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 256
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString outValue
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringGetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "GetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_SOURCE_NODE USE WORLD_GLOBALDATA_rotateSpeed
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 320
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringMerge4Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value1
+							eventIn SFString value2
+							eventIn SFString value3
+							eventIn SFString value4
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Merge4Values"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 256
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringDivide4Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Divide4Values"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 96
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value1
+							eventOut SFString value2
+							eventOut SFString value3
+							eventOut SFString value4
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE9 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"NumericAdd2Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Numeric"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Add"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 160
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE10 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 384
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_direction
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation Transform {
+					translation 117 52 0
+					rotation 0 0 1 0
+					scale 475 392 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE0 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscRandom.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Random"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscRandom.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Random"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 56
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 80
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscRandom.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Random"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 56
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 416
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_direction
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 352
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringMerge4Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value1
+							eventIn SFString value2
+							eventIn SFString value3
+							eventIn SFString value4
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Merge4Values"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 104
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE7 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscRandom.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Random"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE8 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"FilterScale.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString inValue
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Filter"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Scale"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "7"
+							eventOut SFString outValue
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE9 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringGetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "GetArrayValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 288
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 256
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_SOURCE_NODE USE WORLD_GLOBALDATA_result
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE10 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 320
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE11 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 352
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE12 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSetValue.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetValue"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 288
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 320
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE WORLD_GLOBALDATA_rotateSpeed
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE13 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 288
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0.8"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE14 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 176
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE15 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"FilterRange.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString inValue
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Filter"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Range"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 224
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1,6"
+							eventOut SFString outValue
+						}
+					]
+				}
+			]
+		}
+		DEF WORLD_SUBEVENT_ROOT_NODE Group {
+			children [
+				DEF WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE Script {
+					directOutput TRUE
+					mustEvaluate TRUE
+					url [
+						"SystemStart.class"
+					]
+					eventIn SFTime EVENT_START_TIME
+					eventOut SFBool EVENT_START_ENABLED
+				}
+			]
+		}
+	]
+}
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE.EVENT_START_TIME
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE.EVENT_START_ENABLED TO WORLD_EVENT_SYSTEM_Start_NONE_THIS.enabled
+ROUTE WORLD_EVENT_SYSTEM_Frame_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE0.SYSTEM_EVENTIN_Frame_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Frame_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE1.SYSTEM_EVENTIN_Frame_TimeSensor_time
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE0.button TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE5.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE2.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE3.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE4.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE5.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE6.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE7.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE8.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE9.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE10.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE11.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE12.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE13.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE11.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE1.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE2.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE1.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE12.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE14.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE4.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE14.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE10.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE15.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE6.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE15.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE13.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE16.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE7.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE16.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE8.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE17.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE5.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE17.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE9.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE18.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE3.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE18.value
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE19.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE19.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE0.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE5.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE4.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE1.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6.value3
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE5.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE7.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE8.inValue
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE9.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE5.value2
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE0.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE7.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE9.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE0.button TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE10.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE11.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE11.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE10.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE10.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE12.value
+ROUTE WORLD_EVENT_SYSTEM_Frame_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE4.SYSTEM_EVENTIN_Frame_TimeSensor_time
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE4.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE3.inValue1
+ROUTE WORLD_EVENT_SYSTEM_Frame_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE5.SYSTEM_EVENTIN_Frame_TimeSensor_time
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE5.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE3.inValue2
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE3.outValue TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE1.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE6.value1
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE6.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE2.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE6.value2
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE1.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8.value1 TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value1
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8.value2 TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value2
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8.value3 TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value3
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE8.value4 TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE9.value1
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE4.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE9.value2
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE9.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value4
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE21.SYSTEM_EVENTIN_Start_TimeSensor_time
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE21.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE20.value
+ROUTE WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE7.value TO WORLD_DIAGRAM_SYSTEM_Frame_NONE_THIS_updateDiceRotation_MODULE10.value
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE13.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE13.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE10.value1
+ROUTE WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE5.value TO WORLD_DIAGRAM_SYSTEM_Start_NONE_THIS_initialize_MODULE22.value
+ROUTE WORLD_EVENT_USER_Pickup_saikoro_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE14.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE14.value TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE6.value4
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE15.outValue TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE9.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE8.outValue TO WORLD_DIAGRAM_USER_Pickup_saikoro_TouchSensor_setDiceRotation_MODULE15.inValue

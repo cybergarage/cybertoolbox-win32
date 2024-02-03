@@ -1,0 +1,2334 @@
+#VRML V2.0 utf8
+Background {
+	skyColor [
+		0 0 0
+	]
+}
+DEF keyboard Transform {
+	translation 0 0 0
+	rotation 0 0 1 0
+	scale 1 1 1
+	scaleOrientation 0 0 1 0
+	center 0 0 0
+	children [
+		DEF cKey Transform {
+			translation 0 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF whiteKey Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							ambientIntensity 0.2
+							specularColor 0 0 0
+							emissiveColor 0 0 0
+							shininess 0.2
+							transparency 0
+						}
+					}
+					geometry Box {
+						size 0.95 4 1
+					}
+				}
+				DEF WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+			]
+		}
+		DEF dKey Transform {
+			translation 1 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_dKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF eKey Transform {
+			translation 2 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_eKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF fKey Transform {
+			translation 3 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_fKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF gKey Transform {
+			translation 4 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_gKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF aKey Transform {
+			translation 5 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_aKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF bKey Transform {
+			translation 6 0 0
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_bKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE whiteKey
+			]
+		}
+		DEF csKey Transform {
+			translation 0.5 0.9 0.4
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF blackKey Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.1 0.1 0.1
+							ambientIntensity 0.2
+							specularColor 0 0 0
+							emissiveColor 0 0 0
+							shininess 0.2
+							transparency 0
+						}
+					}
+					geometry Box {
+						size 0.5 2.2 1
+					}
+				}
+				DEF WORLD_EVENT_USER_Pickup_csKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+			]
+		}
+		DEF dsKey Transform {
+			translation 1.5 0.9 0.4
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_dsKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE blackKey
+			]
+		}
+		DEF esKey Transform {
+			translation 2.5 0.9 0.4
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_esKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE blackKey
+			]
+		}
+		DEF gsKey Transform {
+			translation 4.5 0.9 0.4
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_gsKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE blackKey
+			]
+		}
+		DEF asKey Transform {
+			translation 5.5 0.9 0.4
+			rotation 0 0 1 0
+			scale 1 1 1
+			scaleOrientation 0 0 1 0
+			center 0 0 0
+			children [
+				DEF WORLD_EVENT_USER_Pickup_asKey_TouchSensor_SOURCE TouchSensor {
+					enabled TRUE
+				}
+				USE blackKey
+			]
+		}
+	]
+}
+DEF keySound Group {
+	children [
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF cKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"cKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF dKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"dKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF eKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"eKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF fKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"fKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF gKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"gKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF aKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"aKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF bKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"bKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF csKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"csKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF dsKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"dsKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF esKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"esKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF gsKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"gsKey.wav"
+				]
+			}
+		}
+		Sound {
+			direction 0 0 1
+			location 0 0 0
+			maxFront 10
+			minFront 1
+			maxBack 10
+			minBack 1
+			intensity 10
+			priority 0
+			spatialize TRUE
+			source DEF asKeySound AudioClip {
+				description ""
+				pitch 1
+				startTime -1
+				stopTime 0
+				loop FALSE
+				url [
+					"asKey.wav"
+				]
+			}
+		}
+	]
+}
+Viewpoint {
+	fieldOfView 0.785398
+	jump TRUE
+	position 2.8774 0 10.9746
+	orientation 0 1 0 0.00229024
+	description ""
+}
+NavigationInfo {
+	visibilityLimit 0
+	headlight TRUE
+	speed 1
+}
+DEF WORLD_ROOT_NODE Group {
+	children [
+		DEF WORLD_GLOBAL_DATA_ROOT_NODE Group {
+		}
+		DEF WORLD_EVENT_ROOT_NODE Group {
+			children [
+				DEF WORLD_EVENT_SYSTEM_Start_NONE_THIS TimeSensor {
+					cycleInterval 0.1
+					enabled TRUE
+					loop TRUE
+					startTime 0
+					stopTime -1
+				}
+				DEF WORLD_EVENT_SYSTEM_Frame_NONE_THIS TimeSensor {
+					cycleInterval 0.1
+					enabled TRUE
+					loop TRUE
+					startTime 0
+					stopTime -1
+				}
+				DEF WORLD_EVENT_USER_Pickup_cKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_dKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_eKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_fKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_gKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_aKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_bKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_csKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_dsKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_esKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_gsKey_TouchSensor Group {
+				}
+				DEF WORLD_EVENT_USER_Pickup_asKey_TouchSensor Group {
+				}
+			]
+		}
+		DEF WORLD_DIAGRAM_ROOT_NODE Group {
+			children [
+				DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey Transform {
+					translation 70 30 0
+					rotation 0 0 1 0
+					scale 490 235 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE0 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 176
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 152
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 416
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE cKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectGetRotation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "GetRotation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 64
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_SOURCE_NODE USE cKey
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 88
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 136
+							field SFString SYSTEM_FIELD_MODULE_VALUE "-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Value"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 80
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 192
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringDivide3Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Divide3Values"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value1
+							eventOut SFString value2
+							eventOut SFString value3
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE7 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringMerge3Values.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString value1
+							eventIn SFString value2
+							eventIn SFString value3
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Merge3Values"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 264
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE8 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 320
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE cKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey Transform {
+					translation 82 56 0
+					rotation 0 0 1 0
+					scale 274 216 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1,0,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE dKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 48
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE dKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey Transform {
+					translation 58 56 0
+					rotation 0 0 1 0
+					scale 315 196 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "2,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "2,0,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 96
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE eKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE eKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey Transform {
+					translation 55 53 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "4,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "4,0,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 96
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE gKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE gKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey Transform {
+					translation 61 55 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "5,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "5,0,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 96
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE aKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE aKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey Transform {
+					translation 93 42 0
+					rotation 0 0 1 0
+					scale 182 168 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "6,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "6,0,0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 96
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 192
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE bKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE bKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey Transform {
+					translation 128 64 0
+					rotation 0 0 1 0
+					scale 228 189 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0.5,0.9,0.2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0.5,0.9,0.4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE csKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE csKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey Transform {
+					translation 78 100 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1.5,0.9,0.2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 120
+							field SFString SYSTEM_FIELD_MODULE_VALUE "1.5,0.9,0.4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE dsKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE dsKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey Transform {
+					translation 89 45 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "2.5,0.9,0.2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "2.5,0.9,0.4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE esKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE esKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey Transform {
+					translation 61 57 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "4.5,0.9,0.2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "4.5,0.9,0.4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE gsKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE gsKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey Transform {
+					translation 90 46 0
+					rotation 0 0 1 0
+					scale 228 217 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "5.5,0.9,0.2"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "5.5,0.9,0.4"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE asKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 160
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE asKeySound
+						}
+					]
+				}
+				DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey Transform {
+					translation 70 24 0
+					rotation 0 0 1 0
+					scale 228 192 1
+					scaleOrientation 0 0 1 0
+					center 0 0 0
+					children [
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE1 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"SystemPickup.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "System"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PICKUP"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 0
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 0
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString button
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE2 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"MiscPlaySound.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Misc"
+							field SFString SYSTEM_FIELD_MODULE_NAME "PlaySound"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 152
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 32
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE fKeySound
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE3 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"ObjectSetLocation.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "Object"
+							field SFString SYSTEM_FIELD_MODULE_NAME "SetLocation"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 224
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							field SFNode SYSTEM_FIELD_MODULE_TARGET_NODE USE fKey
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE4 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringSelector.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							eventIn SFString SYSTEM_EVENTIN_MODULE_EXECUTION
+							eventIn SFString value1
+							eventIn SFString value2
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Selector"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 128
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 96
+							field SFString SYSTEM_FIELD_MODULE_VALUE "0"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE5 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 64
+							field SFString SYSTEM_FIELD_MODULE_VALUE "3,0,-0.5"
+							eventOut SFString value
+						}
+						DEF WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE6 Script {
+							directOutput TRUE
+							mustEvaluate TRUE
+							url [
+								"StringConstant.class"
+							]
+							eventIn SFTime SYSTEM_EVENTIN_Start_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Frame_TimeSensor_time
+							eventIn SFTime SYSTEM_EVENTIN_Clock_TimeSensor_cycleTime
+							eventIn SFBool SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+							eventIn SFBool SYSTEM_EVENTIN_Area_ProximitySensor_isActive
+							eventIn SFVec3f SYSTEM_EVENTIN_Drag_PlaneSensor_translation_changed
+							eventIn SFTime SYSTEM_EVENTIN_Timer_TimeSensor_cycleTime
+							field SFString SYSTEM_FIELD_MODULE_CLASSNAME "String"
+							field SFString SYSTEM_FIELD_MODULE_NAME "Position"
+							field SFInt32 SYSTEM_FIELD_MODULE_XPOS 32
+							field SFInt32 SYSTEM_FIELD_MODULE_YPOS 128
+							field SFString SYSTEM_FIELD_MODULE_VALUE "3,0,0"
+							eventOut SFString value
+						}
+					]
+				}
+			]
+		}
+		DEF WORLD_SUBEVENT_ROOT_NODE Group {
+			children [
+				DEF WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE Script {
+					directOutput TRUE
+					mustEvaluate TRUE
+					url [
+						"SystemStart.class"
+					]
+					eventIn SFTime EVENT_START_TIME
+					eventOut SFBool EVENT_START_ENABLED
+				}
+			]
+		}
+	]
+}
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS.time TO WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE.EVENT_START_TIME
+ROUTE WORLD_EVENT_SYSTEM_Start_NONE_THIS_SOURCE.EVENT_START_ENABLED TO WORLD_EVENT_SYSTEM_Start_NONE_THIS.enabled
+ROUTE WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE0.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE5.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE0.button TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE6.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE1.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE5.value TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE1.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE6.value1 TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE7.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE6.value2 TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE7.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE7.value TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE2.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE1.value TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE7.value3
+ROUTE WORLD_EVENT_USER_Pickup_dKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_USER_Pickup_cKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE8.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE0.button TO WORLD_DIAGRAM_USER_Pickup_cKey_TouchSensor_pushKey_MODULE8.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_USER_Pickup_dKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_dKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_USER_Pickup_eKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_aKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_bKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_eKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_eKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_aKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_aKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_bKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_bKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_aKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_eKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_bKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_bKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_aKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_gKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_eKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_EVENT_USER_Pickup_csKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_esKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_asKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_esKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_esKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_asKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_asKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_csKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_csKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE3.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_dsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_gsKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_esKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_asKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_csKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_gsKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_csKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_dsKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_esKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE2.value TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE3.value TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_asKey_TouchSensor_pushKey_MODULE5.value
+ROUTE WORLD_EVENT_USER_Pickup_fKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE1.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_fKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_fKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE5.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_EVENT_USER_Pickup_fKey_TouchSensor_SOURCE.isActive TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE6.SYSTEM_EVENTIN_Pickup_TouchSensor_isActive
+ROUTE WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE4.value TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE3.value
+ROUTE WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE5.value TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE4.value1
+ROUTE WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE6.value TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE4.value2
+ROUTE WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE2.SYSTEM_EVENTIN_MODULE_EXECUTION
+ROUTE WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE1.button TO WORLD_DIAGRAM_USER_Pickup_fKey_TouchSensor_pushKey_MODULE4.SYSTEM_EVENTIN_MODULE_EXECUTION

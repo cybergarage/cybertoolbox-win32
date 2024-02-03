@@ -1,0 +1,9 @@
+#CTB EVENTTYPE V1.0
+
+Start	System	TimeSensor		SFTime	time
+Frame	System	TimeSensor		SFTime	cycleTime
+Clock	User	TimeSensor		SFTime	cycleTime
+Pickup	User	TouchSensor		SFBool	isActive
+Area	User	ProximitySensor	SFBool	isActive
+Drag	User	PlaneSensor		SFVec3f	translation_changed
+Timer	User	TimeSensor		SFBool	isActive
