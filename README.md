@@ -32,7 +32,7 @@ I have developed CyberToolbox with CyberVRML97ForCC. If you have any interest in
 
 ## Samples
 
-The following are a two samples are created using CyberToolbox. The samples are distributed with a CyberToolbox download package.
+The following are two samples are created using CyberToolbox. The samples are distributed with a CyberToolbox download package.
 
 ### Earth and Moon
 
@@ -43,12 +43,10 @@ The sample has two objects, a earth and a moon. The earth is rotated around the 
 The behavior diagram of the earth is bellow. The diagram is executed when a frame event is generated, and the earth is rotated around a y-axis in the world using the frame number.
 
 ![earthdgm1](doc/img/ctb_win32_earthdgm1.png)
-\<img src="%ATTACHURLPATH%/earthdgm1.png"\>
 
 The behavior diagram of the moon is bellow. The diagram is executed when a frame event is generated, and the moon is moved around the earth using the frame number.
 
 ![earthdgm2](doc/img/ctb_win32_earthdgm2.png)
-\<img src="%ATTACHURLPATH%/earthdgm2.png"\>
 
 ### Clock
 
